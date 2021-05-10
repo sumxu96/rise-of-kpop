@@ -1,4 +1,4 @@
-var bp_margin = {top: 30, right: 30, bottom: 65, left: 70},
+var bp_margin = {top: 50, right: 30, bottom: 65, left: 70},
     bp_width = 600,
     bp_height = 400;
 
@@ -31,6 +31,13 @@ d3.csv('blackpink.csv', function(d) {
     var x = d3.scaleLinear()
         .domain([0, 52000000])
         .range([0, bp_width]);
+
+    bpChart.append("text")
+        .attr("x", (bp_width / 2))             
+        .attr("y", 0 - (bp_margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px")  
+        .text("BLACKPINK Members Instagram Followers");
     
     bpChart.append("g")
         .attr("transform", "translate(0," + bp_height + ")")

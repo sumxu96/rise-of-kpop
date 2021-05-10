@@ -32,6 +32,13 @@ d3.csv('iu-mv.csv', function(d) {
         .domain([0, 210000000])
         .range([0, width]);
     
+    iuChart.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (bb_margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px")  
+        .text("Top 5 IU Music Videos by Views on YouTube");
+    
     iuChart.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x))

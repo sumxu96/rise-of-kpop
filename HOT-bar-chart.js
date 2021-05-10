@@ -1,4 +1,4 @@
-var hot_margin = {top: 30, right: 30, bottom: 65, left: 180},
+var hot_margin = {top: 40, right: 30, bottom: 65, left: 180},
     width = 600,
     height = 400;
 
@@ -28,6 +28,13 @@ d3.csv('HOT-albums.csv', function(d) {
         albumSales.push([data[i].album, data[i].sales]);
     }
 
+    hotChart.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (market_margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px")  
+        .text("H.O.T. Album Sales");
+    
     var x = d3.scaleLinear()
         .domain([0, 1600000])
         .range([0, width]);

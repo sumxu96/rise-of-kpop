@@ -31,6 +31,13 @@ d3.csv('bigbang-mv.csv', function(d) {
     var x = d3.scaleLinear()
         .domain([0, 530000000])
         .range([0, width]);
+
+    bbChart.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (bb_margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px")  
+        .text("Top 5 Big Bang Music Videos by Views on YouTube");
     
     bbChart.append("g")
         .attr("transform", "translate(0," + height + ")")

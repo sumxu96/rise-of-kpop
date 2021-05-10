@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rise of K-pop</title>
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="showcase.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3kit/3.2.0/d3kit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/labella/1.1.4/labella.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3kit-timeline/2.0.1/d3kit-timeline.min.js"></script>
+  </head>
+
+  <body>
+    <form action="#home">
+      <button id="toTop" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+      </button>
+    </form>
+    <!-- End Scroll Up Button -->
+
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#home">
+                  Home
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#overview">
+                  Overview
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#firstgen">
+                  First Generation K-pop
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#secondgen">
+                  Second Generation K-pop
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#today">
+                  Today
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h2 class="title">The Rise of K-pop</h2>
+          </div>
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#overview">Overview</a>
+                  </li>
+                  <li>
+                    <a href="#firstgen">First Generation K-pop</a>
+                  </li>
+                  <li>
+                    <a href="#secondgen">Second Generation K-pop</a>
+                  </li>
+                  <li>
+                    <a href="#today">Today</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+      <!-- Begin First Section -->
+      <div class="section-light about-me" id="overview">
+        <div class="container">
+          <div class="column is-12 about-me">
+            <h1 class="title has-text-centered section-title">Overview</h1>
+          </div>
+          <div class="columns is-multiline">
+            <div
+              class="column is-6 has-vertically-aligned-content"
+              data-aos="fade-right"
+            >
+              <p class="is-larger">
+                Korean popular music (K-pop) has become incredibly popular not only in Korea and the rest of Asia but also all around the world. Let's explore how it became this way!
+              </p>
+            </div>
+            <div class="column is-6 right-image " data-aos="fade-left">
+                <img
+                class="is-rounded"
+                src="kpop.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-12 about-me">
+        <h1 class="title has-text-centered section-title">Timeline of Significant Events</h1>
+      </div>
+      <div id="kpoptimeline" data-aos="fade-left">
+        <script src="timeline.js"></script>
+    </div>
+
+      <div class="section-dark about-me" id="firstgen">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">
+                First Generation K-pop
+              </h1>
+            </div>
+
+            <div
+              class="column is-6 has-vertically-aligned-content"
+              data-aos="fade-right"
+            >
+                <p class="is-larger">
+                    The 1990s was the genesis of modern K-pop. K-pop artists incorporated American pop-style elements into their music and wanted to cater to 
+                    the teenage audience. This led to the emergence of idol boy and girl bands, which laid the foundation of the popularity of idol bands today. H.O.T. became
+                    one of the first boy bands, and they were wildly popular. Their cheerful music and lyrics resonated with the teenage audience. 
+                    Fans would even also attempt to replicate the members' clothing and hairstyles! The chart below shows H.O.T.'s album sales.<br><br>
+                    The 90s also introduced three large entertainment companies that would later dominate the Korean entertainment industry: SM Entertainment,
+                    YG Entertainment, and JYP Entertainment.<br><br>
+                    Although K-pop looked like it was beginning to take off, the market would slump in the early 2000s, and many of the popular groups 
+                    from the 90s went on the decline or even disbanded.
+                </p>
+        
+            </div>
+            <div class="column is-6 right-image " data-aos="fade-left">
+                <img
+                class="is-rounded"
+                src="hot-band.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="column is-10 has-text-centered is-offset-1" id="area2" data-aos="fade-in" data-aos-easing="linear">
+              <script src="HOT-bar-chart.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Begin Second Gen -->
+      <div class="section-light about-me" id="secondgen">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div
+              class="column is-12 about-me"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1 class="title has-text-centered section-title">Second Generation K-pop</h1>
+            </div>
+            
+            <div
+              class="column is-6 has-vertically-aligned-content"
+              data-aos="fade-right"
+            >
+                <p>
+                    By the mid-late 2000s, K-pop began to make a re-emergence. In 2006, the boy band Big Bang debuted under YG Entertainment. Although their debut did not start them off 
+                    with a bang, a string of hit singles would propel them to become one of the most popular bands in K-pop history. They were the first big
+                    K-pop hip hop group, and really started the spread of K-pop and Korean culture around the world. Because of Big Bang's success, YouTube 
+                    launched its own K-pop channel to recognize K-pop's emerging popularity world-wide.
+                </p>
+        
+            </div>
+            <div class="column is-6 right-image " data-aos="fade-left">
+                <img
+                class="is-rounded"
+                src="bigbang.jpeg"
+                alt=""
+              />
+            </div>
+
+            <div class="column is-10 has-text-centered is-offset-1" id="area3" data-aos="fade-in" data-aos-easing="linear">
+                <script src="bigbang-bar-chart.js"></script>
+            </div>
+
+            <div
+              class="column is-6 has-vertically-aligned-content"
+              data-aos="fade-right"
+            >
+                <img
+                    class="is-rounded"
+                    src="iu.png"
+                    alt=""
+                />
+            </div>
+
+            <div class="column is-6 right-image " data-aos="fade-left">
+                <p>
+                    During this time, another soon-to-be titan would rise up as well. Female singer and actress IU debuted in 2008. IU was and still
+                    is an anomaly - in an age of idol bands, she dominates the K-pop industry as a solo-act. Her soprano vocal range is iconic, and her music
+                    generally differs from mainstream K-pop styles. Many solo artists in the K-pop industry do not last that long, but IU has stood strong 
+                    in the test of time. Although she may not have as much international recognition as some other K-pop artists, domestically, she is one
+                    of, if not the most, popular idol in Korea. 
+                </p>
+                <div id="area4">
+                    <script src="iu-bar-chart.js"></script>
+                </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="section-dark about-me" id="today">
+            <div class="container">
+              <div
+                class="columns is-multiline"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <div class="column is-12 about-me">
+                  <h1 class="title has-text-centered section-title">
+                    K-pop Today
+                  </h1>
+                </div>
+    
+                <div
+                  class="column is-6 has-vertically-aligned-content"
+                  data-aos="fade-right"
+                >
+                    <p class="is-larger">
+                        Today, the most well-known K-pop group is BTS. BTS debuted in 2013, but has taken the world by storm in recent years.
+                        BTS made its way into mainstream American music in 2017, when it became the first Korean group ever to win a Billboard Music Award
+                        as the Top Social Artist. BTS is the best selling artist in Korean history, and continues to be one of the most popular groups in the world. 
+                        Their music often touches on many personal and social themes such as mental health, loss, and individualism.
+                        BTS's fanclub, ARMY, is also known to be very outspoken on social media.  
+                    </p>
+            
+                </div>
+
+                <div class="column is-6 right-image " data-aos="fade-left">
+                    <img
+                    class="is-rounded"
+                    src="bts.jpeg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="column is-10 has-text-centered is-offset-1" id="area6" data-aos="fade-in" data-aos-easing="linear">
+                    <script src="bts-treemap.js"></script>
+                </div>
+            </div>
+            </div>
+          </div>
+          
+          <div class="section-light about-me">
+            <div class="container">
+                <div class="columns is-multiline">
+                <div
+                class="column is-6 has-vertically-aligned-content"
+                data-aos="fade-right"
+                >
+                    <img
+                        class="is-rounded"
+                        src="blackpink.jpeg"
+                        alt=""
+                    />
+                </div>
+
+                <div class="column is-6 right-image " data-aos="fade-left">
+                    <p>Another incredibly popular K-pop group today is BLACKPINK. They first debuted in 2016. BLACKPINK has colloborated with some big names
+                        in the West such as Dua Lipa and Selena Gomez. They have an immense online presence, as they became the first group ever to have
+                        more than 1 billion views on 4 separate music videos on YouTube. Each of the members also have a very large Instagram following as well, 
+                        as they are the most followed individuals from Korea.</p>
+                    <div id="area7">
+                        <script src="blackpink-bar-chart.js"></script>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="section-dark about-me">
+            <div class="container">
+                <div class="columns is-multiline">
+                <div
+                class="column is-6 has-vertically-aligned-content"
+                data-aos="fade-right"
+                >
+                    <p>Entertainment companies have also continued to grow. Below shows stock prices and market values of the 
+                        big three entertainment companies in 2020. Even though there was a pandemic, they still continue to expand.
+                    </p>
+                </div>
+
+                <div class="column is-10 has-text-centered is-offset-1" id="area8" data-aos="fade-in" data-aos-easing="linear">
+                    <script src="stock-line-chart.js"></script>
+                </div>
+
+                <div class="column is-10 has-text-centered is-offset-1" id="area9" data-aos="fade-in" data-aos-easing="linear">
+                    <script src="market-share-line-chart.js"></script>
+                </div>
+                
+            </div>
+            </div>
+          </div>
+      </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <p>
+        <strong class="white">Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
+        The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="showcase.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
